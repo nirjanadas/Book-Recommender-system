@@ -79,6 +79,6 @@ Fast inference with MobileNetV2
 Alerts when fire is detected in video stream
 
 👤 Author
-Goddati Sai Likhitha
+Nirjana Das
 
-GitHub:SaLikhitha
+GitHub:nirjanadas
