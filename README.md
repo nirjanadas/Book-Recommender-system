@@ -45,34 +45,37 @@ git clone https://github.com/your-username/fire-detection-mobilenet.git
 cd fire-detection-mobilenet
 ```
 ### 2️⃣ Setup Virtual Environment
+```bash
 python -m venv venv
 venv\Scripts\activate     # On Windows
-
+```
 ### 3️⃣ Install Dependencies
+```
 pip install -r requirements.txt
-
+```
 ### 4️⃣ Dataset Setup
 
-Place your dataset inside the dataset/ folder with this structure:
+```Place your dataset inside the dataset/ folder with this structure:
 
 dataset/
 ├── Fire/
 └── NoFire/
-
+```
 ### 5️⃣ Train the Model
+```
 python fire_detection_model.py
-
+```
 
 This will train MobileNetV2 and save the best model as .h5.
 
 ### 6️⃣ Run Real-Time Fire Detection
+```
 python fire_detection_app.py
-
 
 Opens your webcam/video feed
 
 Detects Fire / No Fire in real time
-
+```
 ## 📊 Results
 
 Model Accuracy: 92%+ on custom dataset
