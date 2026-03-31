@@ -22,6 +22,7 @@ It can detect fire in images, videos, or live webcam feeds with high accuracy.
 
 
 ## 📂 Project Structure
+```bash
 project/
 │── dataset/ # Training dataset (Fire / NoFire folders)
 │ ├── Fire/
@@ -34,21 +35,23 @@ project/
 │── .gitignore
 │── LICENSE
 │── README.md
+```
 ---
 
 ## ▶️ How to Run
-1️⃣ Clone the Repository
+### 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/your-username/fire-detection-mobilenet.git
 cd fire-detection-mobilenet
-2️⃣ Setup Virtual Environment
+```
+### 2️⃣ Setup Virtual Environment
 python -m venv venv
 venv\Scripts\activate     # On Windows
 
-3️⃣ Install Dependencies
+### 3️⃣ Install Dependencies
 pip install -r requirements.txt
 
-4️⃣ Dataset Setup
+### 4️⃣ Dataset Setup
 
 Place your dataset inside the dataset/ folder with this structure:
 
@@ -56,13 +59,13 @@ dataset/
 ├── Fire/
 └── NoFire/
 
-5️⃣ Train the Model
+### 5️⃣ Train the Model
 python fire_detection_model.py
 
 
 This will train MobileNetV2 and save the best model as .h5.
 
-6️⃣ Run Real-Time Fire Detection
+### 6️⃣ Run Real-Time Fire Detection
 python fire_detection_app.py
 
 
@@ -70,7 +73,7 @@ Opens your webcam/video feed
 
 Detects Fire / No Fire in real time
 
-📊 Results
+## 📊 Results
 
 Model Accuracy: 92%+ on custom dataset
 
@@ -78,7 +81,7 @@ Fast inference with MobileNetV2
 
 Alerts when fire is detected in video stream
 
-👤 Author
+## 👤 Author
 Nirjana Das
 
 GitHub:nirjanadas
